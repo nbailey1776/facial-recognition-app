@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Data Collection</h2>
+<form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+    <div class="form-group">
+        <label for="user_id">User ID</label>
+        <input type="number" class="form-control" id="user_id" name="user_id" required>
+        <div class="invalid-feedback">Please provide a valid User ID.</div>
+    </div>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+        <div class="invalid-feedback">Please provide a name.</div>
+    </div>
+    <div class="form-group">
+        <label for="files">Upload Images (Optional)</label>
+        <input type="file" class="form-control-file" id="files" name="files" multiple>
+    </div>
+    <button type="submit" class="btn btn-primary">Start Data Collection</button>
+</form>
+
+<!-- Form Validation Script -->
+<script>
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+</script>
+{% endblock content %}

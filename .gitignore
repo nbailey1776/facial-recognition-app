@@ -1,0 +1,22 @@
+# Python files
+*.pyc
+__pycache__/
+
+# Sensitive files
+.env
+users.db
+
+# Virtual environment
+venv/
+env/
+
+# Uploads
+uploads/
+
+# Models or large files
+models/
+*.pkl
+*.h5
+
+# Log files
+*.log

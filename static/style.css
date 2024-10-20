@@ -1,0 +1,17 @@
+body {
+    padding-top: 56px; /* Adjust if navbar height changes */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+}
+
+table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to the Face Recognition App</h1>
+    <p class="lead">This application allows you to collect data, train a model, and recognize faces.</p>
+    <hr class="my-4">
+    <p>Get started by collecting data or training the model.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('collect_data') }}" role="button">Collect Data</a>
+    <a class="btn btn-success btn-lg" href="{{ url_for('train_model') }}" role="button">Train Model</a>
+</div>
+{% endblock content %}
