@@ -13,10 +13,7 @@ env/
 # Uploads
 uploads/
 
-# Models or large files
-models/
-*.pkl
-*.h5
+*.yml
 
 # Log files
 *.log
