@@ -13,7 +13,7 @@ env/
 # Uploads
 uploads/
 
-*.yml
+Trainer.yml
 
 # Log files
 *.log
